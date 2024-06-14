@@ -1,0 +1,60 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Light grey background for slight contrast */
+    color: #212529; /* Dark grey color for general text for better readability */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #007bff; /* Bootstrap primary color for main headings */
+    font-size: 2.5rem; /* Larger font size for main heading */
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    color: #17a2b8; /* Bootstrap info color for subheadings */
+    font-size: 2rem; /* Slightly larger font size for subheadings */
+    margin-bottom: 0.75em;
+}
+
+.Graph {
+    padding: 20px;
+    background-color: #ffffff; /* White background for graph containers */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space out sections */
+    border-radius: 5px; /* Slightly rounded corners for a softer look */
+}
+
+/* Additional styles for improving the layout and responsiveness */
+
+.container {
+    max-width: 1200px; /* Max width for the central container */
+    margin: auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    flex: 1;
+    padding: 15px;
+}
+
+/* Make graphs responsive */
+@media (max-width: 768px) {
+    .col {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .Graph {
+        padding: 10px;
+    }
+}
